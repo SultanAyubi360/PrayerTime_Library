@@ -48,7 +48,7 @@ afterEvaluate {
                 from(components["release"])
                 groupId = "com.github.SultanAyubi360"
                 artifactId = "prayertimelibrary"
-                version = "1.0"
+                version = "1.1"
             }
         }
     }
