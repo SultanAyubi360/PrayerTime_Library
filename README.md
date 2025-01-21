@@ -11,13 +11,13 @@
 
 <kbd>
 
-<video src="https://github.com/user-attachments/assets/a50325d0-7012-47fa-b542-478c25b66dee" width="30" height="30" /> 
+<video src="https://github.com/user-attachments/assets/fc44135b-fc86-4d71-85e2-ec3d4dc98d91" width="30" height="30" /> 
 
 </kbd>
 
 <kbd>
 
-<video src="https://github.com/user-attachments/assets/36c12443-d752-4da4-ba22-da5c9e180548" width="30" height="30" />
+<video src="https://github.com/user-attachments/assets/36bb687a-59b8-41dc-a09a-bdcef2ed036c" width="30" height="30" />
 
 </kbd>
 
