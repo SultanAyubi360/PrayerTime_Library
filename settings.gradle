@@ -22,4 +22,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "PrayerTime App"
 include ':app'
-include ':PrayerTimeLibrary'
+//include ':PrayerTimeLibrary'
