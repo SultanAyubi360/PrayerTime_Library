@@ -28,12 +28,12 @@
         android:layout_height="wrap_content"
         android:text="Express Entertainment"
         android:layout_marginStart="@dimen/_5sdp"
+        android:fontFamily="@font/opensans_bold"
         app:layout_constraintTop_toTopOf="@id/app_logo"
         app:layout_constraintBottom_toBottomOf="@id/app_logo"
         app:layout_constraintStart_toEndOf="@id/app_logo"
         android:textColor="@color/white"
-        android:textSize="14sp"
-        android:textStyle="bold" />
+        android:textSize="16sp" />
 
     <!-- Category -->
     <TextView
@@ -42,9 +42,9 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="@dimen/_5sdp"
         android:text="5:34 am"
-        android:textColor="@android:color/white"
-        android:textSize="12sp"
-        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:fontFamily="@font/opensans_bold"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/app_logo" />
