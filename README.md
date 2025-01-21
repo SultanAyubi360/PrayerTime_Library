@@ -7,6 +7,21 @@
 
 </div>
 
+## ✨ Sample Videos
+
+<kbd>
+
+<video src="https://github.com/user-attachments/assets/e1cbd212-058b-48e5-9b1b-72c4bed6ed62" width="30" height="30" /> 
+
+</kbd>
+
+<kbd>
+
+<video src="https://github.com/user-attachments/assets/b8bbdde9-cf2a-4d1c-9bd6-efd7b5138768" width="30" height="30" />
+
+</kbd>
+
+
 ## ✨ Screenshots
 
 <kbd>
