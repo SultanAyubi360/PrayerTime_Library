@@ -70,7 +70,6 @@ public class MainActivity extends AppCompatActivity {
 
         // Get the current date
         Calendar cal = Calendar.getInstance();
-
         // Get prayer times
         ArrayList<String> prayerTimes = prayers.getPrayerTimes(cal, latitude, longitude, timezone);
         ArrayList<String> prayerNames = prayers.getTimeNames();
