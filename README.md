@@ -7,6 +7,16 @@
 
 </div>
 
+## ✨ Screenshots
+
+<kbd>
+  * Shia Prayer Timings:
+  <img src="https://i.ibb.co/BnkJSxZ/Media-1.jpg" width=30% height=30%/>
+
+  * Sunni Prayer Timings:
+  <img src="https://i.ibb.co/n8SckX7/Media.jpg" width=30% height=30%/>
+</kbd>
+
 
 ## Reporting an issue
 
