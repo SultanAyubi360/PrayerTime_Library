@@ -138,22 +138,6 @@ After creating PrayTime instance move next where we will get latitude and longit
 ```
 ---
 
-
----
-
-* Java
-```java
- // Creating an instance of PrayTime
-  PrayerTime prayers = new PrayerTime();
-```
-
-* Kotlin
-```Kotlin
-    // Creating an instance of PrayTime
-    val prayTime = PrayTime()
-```
----
-
 ## ✨ Screenshots
 
 <kbd>
