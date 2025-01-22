@@ -75,6 +75,28 @@ dependencyResolutionManagement {
 }
 ```
 
+### Step 2
+
+Add the dependency in your build.gradle.
+
+# For groovy DSL
+
+```
+dependencies {
+    implementation 'com.github.SultanAyubi360:PrayerTime_Library:1.1'
+}
+```
+
+# For Kotlin DSL
+
+```
+dependencies {
+    implementation ("com.github.SultanAyubi360:PrayerTime_Library:1.1")
+}
+```
+---
+
+
 ## ✨ Screenshots
 
 <kbd>
