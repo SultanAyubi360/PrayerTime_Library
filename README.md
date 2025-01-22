@@ -22,7 +22,7 @@ Azan library enables you to determin latitude, longitude, timezone, height, The 
 <div align="center">
 
 [![](https://jitpack.io/v/SultanAyubi360/PrayerTime_Library.svg)](https://jitpack.io/#SultanAyubi360/PrayerTime_Library/1.1)
-![Status](https://img.shields.io/badge/Status-Active-brightgreen) ![Kotlin](https://img.shields.io/badge/Kotlin-100%25-brightgreen)
+![Status](https://img.shields.io/badge/Status-Active-brightgreen) ![Kotlin](https://img.shields.io/badge/Kotlin-100%25-brightgreen) ![](https://img.shields.io/badge/Platform-Android-brightgreen.svg)
 
 </div>
 
