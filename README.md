@@ -46,6 +46,35 @@ PrayerTime library enables you to determin latitude, longitude, timezone, height
 
 </kbd>
 
+## How to use ? 
+
+### Step 1
+
+Add this in your root build.gradle at the end of repositories
+- in your `allprojects` section , you have to add  `maven { url 'https://jitpack.io' }`
+  
+#### In older Gradle Style (Build.gradle (project level))
+```
+allprojects {
+  repositories {
+    ...
+    maven { url 'https://jitpack.io' }
+  }
+}
+```
+
+#### In New Project Structure (Settings.gradle)
+```
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        ......
+        maven { url 'https://jitpack.io' }
+        .....
+    }
+}
+```
+
 ## ✨ Screenshots
 
 <kbd>
