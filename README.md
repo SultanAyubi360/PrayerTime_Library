@@ -99,16 +99,20 @@ dependencies {
 ## Step 3
 
 # Usage
------- 
 
 ### Create an `PrayerTime`
+
 You will need to create a new instance of `PrayerTime`. Once the instance are configured, you can call `getPrayerTimes()`.
 
+---
+
+* Java
 ```java
  // Creating an instance of PrayTime
 		PrayerTime prayers = new PrayerTime();
 ```
 
+* Kotlin
 ```Kotlin
 		 // Creating an instance of PrayTime
     val prayTime = PrayTime()
