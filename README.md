@@ -250,7 +250,6 @@ live_rv.adapter = prayerAdapter
 ```
 ---
 
-
 ## ✨ Screenshots
 
 <kbd>
@@ -314,7 +313,64 @@ The rest of the needed information is contained within the `CalculationParameter
 | `ANGLEBASED` | Similar to `SEVENTH_OF_THE_NIGHT`, but instead of 1/7, the fraction of the night used is fajrAngle/60 and ishaAngle/60 |
 | `NONE` | No adjustment |
 
+### Configurations
+* `setTimeFormat` To change the time format to:
+	* `Time24`  24-hour format
+	* `Time12`  12-hour format
+	* `Time12NS`  12-hour format with no suffix
+	* `Floating`  floating point number
+* Java
+```java
+prayers.setTimeFormat(prayers.Time12);
+```
+* Kotlin
+```Kotlin
+prayers.setTimeFormat(prayers.Time12)
+```
 
+* `setCalcMethod` To change the Calculation Methods.
+	* `Karachi`  University of Islamic Sciences, Karachi
+	* `ISNA`  Islamic Society of North America (ISNA)
+	* `MWL`  Muslim World League (MWL)
+	* `Makkah`  Umm al-Qura, Makkah
+	* `Egypt`  Egyptian General Authority of Survey
+	* `Jafari`  Ithna Ashari
+	* `Tehran`  Institute of Geophysics, University of Tehran
+	* `Custom`  Custom Setting
+* Java
+```java
+ prayers.setCalcMethod(prayers.Karachi);
+```
+* Kotlin
+```Kotlin
+prayers.setCalcMethod(prayers.Karachi)
+```
+
+* `setAsrJuristic` To change Juristic Method for Asr
+	* `Shafii`  Shafii (standard)
+	* `Hanafi`  Hanafi
+* Java
+```java
+ prayers.setAsrJuristic(prayers.Hanafi);
+```
+* Kotlin
+```Kotlin
+prayers.setAsrJuristic(prayers.Hanafi)
+```
+
+* `setAdjustHighLats` Adjusting Methods for Higher Latitudes
+	* `None`  No adjustment
+	* `MidNight`  middle of night
+	* `OneSeventh`  1/7th of night
+	* `AngleBased`  angle/60th of night
+* Java
+```java
+ prayers.setAdjustHighLats(prayers.AngleBased);
+```
+* Kotlin
+```Kotlin
+prayers.setAdjustHighLats(prayers.AngleBased)
+```
 
 ## Reporting an issue
 
