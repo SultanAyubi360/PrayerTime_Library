@@ -3,6 +3,14 @@
 **Fixed and Calculated Prayer Times**:
 Most cities around the world find their prayer times by using some calculations which is based on location (longitude and latitude) but some other cities have fixed time table for their prayer times. This library contains most fixed and calculated prayer times. Now you can contribute it to improve it and also you can use it in Muslim communities or Muslim apps.Muslims have 5 prayers per day, at each time all muslims are notified by Azan, to pray. first Muslims used to calcualte prayer time with sun raise and sun shadows, but to simplyied it and make it moreaccurent speacilly in cloudy cities, Mosques currently use a complex calcualtion based on latitude, longitude, height, timezone, sun raise time.Prayer Times provides a set of handy functions to calculate prayer times for any location around the world, based on a variety of calculation methods currently used in Muslim communities.
 
+<div align="center">
+
+[![](https://jitpack.io/v/SultanAyubi360/PrayerTime_Library.svg)](https://jitpack.io/#SultanAyubi360/PrayerTime_Library/1.1)
+![Status](https://img.shields.io/badge/Status-Active-brightgreen) ![Kotlin](https://img.shields.io/badge/Kotlin-100%25-brightgreen) ![](https://img.shields.io/badge/Platform-Android-brightgreen.svg)
+
+</div>
+
+
 ## What is PrayerTime library?  
   
 Library aiming to calculate prayer time with one line code , if you implement prayer time application , there is no need to do this headache again .  
@@ -16,15 +24,8 @@ Islam Time prayers is every complex to calculate, cause there is many variables 
 - **The Way of Calculation**   
 
 
-Azan library enables you to determin latitude, longitude, timezone, height, The Way of Calculation as Inputes. 
+PrayerTime library enables you to determin latitude, longitude, timezone, height, The Way of Calculation as Inputes. 
 
-
-<div align="center">
-
-[![](https://jitpack.io/v/SultanAyubi360/PrayerTime_Library.svg)](https://jitpack.io/#SultanAyubi360/PrayerTime_Library/1.1)
-![Status](https://img.shields.io/badge/Status-Active-brightgreen) ![Kotlin](https://img.shields.io/badge/Kotlin-100%25-brightgreen) ![](https://img.shields.io/badge/Platform-Android-brightgreen.svg)
-
-</div>
 
 ## ✨ Sample Videos
 
