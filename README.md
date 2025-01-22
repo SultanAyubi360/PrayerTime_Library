@@ -179,7 +179,7 @@ You will need to create a new instance of `PrayerTime`. Once the PrayerTimes obj
 
 ## Prayer Times
 
-Once the `PrayerTimes` object has been initialized it will contain values for all five prayer times and the time for sunrise. To display these Prayer times and Prayer names you can use both ArrayLists we have  'prayerTimes' and 'prayerNames'. Now i am using these to set data in adapter and show in recyclerview see below.You guys can create recyclerview and adapter according to your requirements just i give you idea how to pass list to adapter and show records in recyclerview.
+Once the `PrayerTimes` object has been initialized it will contain values for all five prayer times and the time for sunrise. To display these Prayer times and Prayer names you can use both ArrayLists we have  'prayerTimes' and 'prayerNames'. Now i am using these to set data in adapter and show in recyclerview see below.You guys can create recyclerview and adapter according to your requirements, Here just I give you idea how to pass list to adapter and show records in recyclerview.
 
 * Java
 ```java
@@ -189,7 +189,7 @@ prayerModelList = new ArrayList<>();
             String imageUrl;
             switch (prayerNames.get(i).toLowerCase()) {
                 case "fajr":
-                    imageUrl = FAJR_URL;
+                    imageUrl = FAJR_URL;//image urls to set in imageview in recyclerview item pass "https://i.ibb.co/qdm2t9M/Fajr-Prayer-English.png" like this also.
                     break;
                 case "sunrise":
                     imageUrl = SUNRISE_URL;
@@ -229,7 +229,7 @@ val prayerModelList = ArrayList<PrayerModel>()
 
 for (i in prayerTimes.indices) {
     val imageUrl: String = when (prayerNames[i].toLowerCase()) {
-        "fajr" -> FAJR_URL
+        "fajr" -> FAJR_URL //image urls to set in imageview in recyclerview item pass "https://i.ibb.co/qdm2t9M/Fajr-Prayer-English.png" like this also.
         "sunrise" -> SUNRISE_URL
         "zuhar" -> DHUHR_URL
         "asar" -> ASR_URL
