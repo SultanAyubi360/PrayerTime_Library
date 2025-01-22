@@ -1,4 +1,8 @@
-# PrayerTime_Library
+# PrayerTime Library
+
+**Fixed and Calculated Prayer Times**:
+Most cities around the world find their prayer times by using some calculations which is based on location (longitude and latitude) but some other cities have fixed time table for their prayer times. This library contains most fixed and calculated prayer times. Now you can contribute it to improve it and also you can use it in Muslim communities or Muslim apps.
+
 
 <div align="center">
 
