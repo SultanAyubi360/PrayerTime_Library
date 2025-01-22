@@ -119,6 +119,41 @@ You will need to create a new instance of `PrayerTime`. Once the instance are co
 ```
 ---
 
+## Step 4
+
+After creating PrayTime instance move next where we will get latitude and longitude from user.
+
+* Java
+```java
+// Declaring and initializing latitude and longitude
+ double latitude = 33.5953143;
+ double longitude = 73.0412202;//Rawalpindi
+```
+
+* Kotlin
+```Kotlin
+    // Declaring and initializing latitude and longitude
+    val latitude: Double = 33.5953143
+    val longitude: Double = 73.0412202//Rawalpindi
+```
+---
+
+
+---
+
+* Java
+```java
+ // Creating an instance of PrayTime
+  PrayerTime prayers = new PrayerTime();
+```
+
+* Kotlin
+```Kotlin
+    // Creating an instance of PrayTime
+    val prayTime = PrayTime()
+```
+---
+
 ## ✨ Screenshots
 
 <kbd>
