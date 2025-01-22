@@ -98,45 +98,158 @@ dependencies {
 
 ## Step 3
 
-# Usage
+## How to implement and use methods:
 
-### Create an `PrayerTime`
+You will need to create a new instance of `PrayerTime`. Once the PrayerTimes object has been initialized pass Calculation Parameters in `getPrayerTimes()` method which take 4 arguments current date,latitude longitude and timezone.Once the instance are configured, you can call `getPrayerTimes()`.
 
-You will need to create a new instance of `PrayerTime`. Once the instance are configured, you can call `getPrayerTimes()`.
-
----
+## Full implementation
 
 * Java
 ```java
- // Creating an instance of PrayTime
-		PrayerTime prayers = new PrayerTime();
+ 
+        // create a new instance of `PrayerTime`
+        PrayTime prayers = new PrayTime();
+
+        // Getting the system timezone from the device
+        double timezone = prayers.getBaseTimeZone(); 
+
+        // Setting the time format to 12-hour format
+        prayers.setTimeFormat(prayers.Time12);
+
+        // Setting the calculation method to Karachi
+        prayers.setCalcMethod(prayers.Karachi);
+
+        // Setting the juristic method for Asr to Hanafi
+        prayers.setAsrJuristic(prayers.Hanafi);
+
+         // Adjusting for high latitudes
+        prayers.setAdjustHighLats(prayers.AngleBased);
+
+        // Get the current date
+        Calendar cal = Calendar.getInstance();
+
+       // Give latitude and longitude now i give hardcoded which will be change with current location of user after getting location permission.
+        double latitude = 33.5953143;
+        double longitude = 73.0412202;
+
+        // Get prayer times
+        ArrayList<String> prayerTimes = prayers.getPrayerTimes(cal, latitude, longitude, timezone);
+
+       // Get prayer names
+        ArrayList<String> prayerNames = prayers.getTimeNames();
 ```
 
 * Kotlin
 ```Kotlin
-		 // Creating an instance of PrayTime
-    val prayTime = PrayTime()
+
+    //create a new instance of `PrayerTime`
+    val prayers = PrayTime()
+
+    // Getting the system timezone from the device
+    val timezone: Double = prayers.getBaseTimeZone()
+
+    // Setting the time format to 12-hour format
+    prayers.setTimeFormat(prayers.Time12)
+
+    // Setting the calculation method to Karachi
+    prayers.setCalcMethod(prayers.Karachi)
+
+    // Setting the juristic method for Asr to Hanafi
+    prayers.setAsrJuristic(prayers.Hanafi)
+
+    // Adjusting for high latitudes
+    prayers.setAdjustHighLats(prayers.AngleBased)
+
+    // Get the current date
+    val cal: Calendar = Calendar.getInstance()
+
+    // Give latitude and longitude now i give hardcoded which will be change with current location of user after getting location permission.
+    val latitude = 33.5953143
+    val longitude = 73.0412202
+
+    // Get prayer times
+    val prayerTimes: ArrayList<String> = prayers.getPrayerTimes(cal, latitude, longitude, timezone)
+
+    // Get prayer names
+    val prayerNames: ArrayList<String> = prayers.getTimeNames()
 ```
 ---
 
 ## Step 4
 
-After creating PrayTime instance move next where we will get latitude and longitude from user.
+## Prayer Times
+
+Once the `PrayerTimes` object has been initialized it will contain values for all five prayer times and the time for sunrise. To display these prayer times and time names you can use both ArrayLists we have  'prayerTimes' and 'prayerNames'. Now i am using these to set data in adapter and show in recyclerview see below.You guys can create recyclerview and adapter according to your requirements just i give you idea how to pass list to adapter and show records in recyclerview.
 
 * Java
 ```java
-// Declaring and initializing latitude and longitude
- double latitude = 33.5953143;
- double longitude = 73.0412202;//Rawalpindi
+
+prayerModelList = new ArrayList<>();
+        for (int i = 0; i < prayerTimes.size(); i++) {
+            String imageUrl;
+            switch (prayerNames.get(i).toLowerCase()) {
+                case "fajr":
+                    imageUrl = FAJR_URL;
+                    break;
+                case "sunrise":
+                    imageUrl = SUNRISE_URL;
+                    break;
+                case "zuhar":
+                    imageUrl = DHUHR_URL;
+                    break;
+                case "asar":
+                    imageUrl = ASR_URL;
+                    break;
+                case "sunset":
+                    imageUrl = SUNSET_URL;
+                    break;
+                case "maghrib":
+                    imageUrl = MAGHRIB_URL;
+                    break;
+                case "isha":
+                    imageUrl = ISHA_URL;
+                    break;
+                default:
+                    imageUrl = "";
+                    break;
+            }
+            prayerModelList.add(new PrayerModel(imageUrl, prayerNames.get(i), prayerTimes.get(i)));
+        }
+
+        // Set up the RecyclerView
+        prayerAdapter = new PrayerAdapter(prayerModelList, this);
+        live_rv.setLayoutManager(new LinearLayoutManager(this));
+        live_rv.setAdapter(prayerAdapter);
 ```
 
 * Kotlin
 ```Kotlin
-    // Declaring and initializing latitude and longitude
-    val latitude: Double = 33.5953143
-    val longitude: Double = 73.0412202//Rawalpindi
+
+val prayerModelList = ArrayList<PrayerModel>()
+
+for (i in prayerTimes.indices) {
+    val imageUrl: String = when (prayerNames[i].toLowerCase()) {
+        "fajr" -> FAJR_URL
+        "sunrise" -> SUNRISE_URL
+        "zuhar" -> DHUHR_URL
+        "asar" -> ASR_URL
+        "sunset" -> SUNSET_URL
+        "maghrib" -> MAGHRIB_URL
+        "isha" -> ISHA_URL
+        else -> ""
+    }
+
+    prayerModelList.add(PrayerModel(imageUrl, prayerNames[i], prayerTimes[i]))
+}
+
+// Set up the RecyclerView
+val prayerAdapter = PrayerAdapter(prayerModelList, this)
+live_rv.layoutManager = LinearLayoutManager(this)
+live_rv.adapter = prayerAdapter
+
 ```
 ---
+
 
 ## ✨ Screenshots
 
