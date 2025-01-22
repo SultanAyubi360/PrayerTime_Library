@@ -1,9 +1,10 @@
 # PrayerTime Library
 
 <p align="center">
-  <img src="950d55da-7eee-4d9d-a4a3-b588d1c0fd25](https://github.com/user-attachments/assets/24ff142d-54f7-4ba4-8261-92f40293111a">
-
+  <img src="https://i.ibb.co/y0rk0Qp/950d55da-7eee-4d9d-a4a3-b588d1c0fd25.png">
 </p>
+</br>
+
 
 **Fixed and Calculated Prayer Times**:
 Most cities around the world find their prayer times by using some calculations which is based on location (longitude and latitude) but some other cities have fixed time table for their prayer times. This library contains most fixed and calculated prayer times. Now you can contribute it to improve it and also you can use it in Muslim communities or Muslim apps.Muslims have 5 prayers per day, at each time all muslims are notified by Azan, to pray. first Muslims used to calcualte prayer time with sun raise and sun shadows, but to simplyied it and make it moreaccurent speacilly in cloudy cities, Mosques currently use a complex calcualtion based on latitude, longitude, height, timezone, sun raise time.Prayer Times provides a set of handy functions to calculate prayer times for any location around the world, based on a variety of calculation methods currently used in Muslim communities.
