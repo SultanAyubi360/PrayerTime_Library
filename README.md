@@ -258,6 +258,63 @@ live_rv.adapter = prayerAdapter
   <img src="https://i.ibb.co/n8SckX7/Media.jpg" width=30% height=30%/>
 </kbd>
 
+#### Calculation parameters
+
+The rest of the needed information is contained within the `CalculationParameters`.It is recommended to use one of the pre-populated instances in the `CalculationMethod` class. You can then further customize the calculation parameters if needed.
+
+
+| Parameter | Description |
+| --------- | ----------- |
+| `TimeFormat`| Time Format 12-hour format or other|
+| `method`    | CalculationMethod name |
+| `AsrJuristic`| Juristic method for Asr |
+| `fajrAngle` | Angle of the sun used to calculate Fajr |
+| `ishaAngle` | Angle of the sun used to calculate Isha |
+| `ishaInterval` | Minutes after Maghrib (if set, the time for Isha will be Maghrib plus ishaInterval) |
+| `madhab` | Value from the Madhab object, used to calculate Asr |
+| `highLatitudeRule` | Value from the HighLatitudeRule object, used to set a minimum time for Fajr and a max time for Isha |
+| `adjustments` | JavaScript object with custom prayer time adjustments in minutes for each prayer time |
+
+**TimeFormat**
+
+| Value | Description |
+| ----- | ----------- |
+| `Time24` | 24-hour format |
+| `Time12` | 12-hour format |
+| `Time12NS` |12-hour format with no suffix |
+| `Floating` |floating point number |
+
+
+**CalculationMethod**
+
+| Value | Description |
+| ----- | ----------- |
+| `MUSLIM_WORLD_LEAGUE` | Muslim World League. Fajr angle: 18, Isha angle: 17 |
+| `EGYPTIAN` | Egyptian General Authority of Survey. Fajr angle: 19.5, Isha angle: 17.5 |
+| `KARACHI` | University of Islamic Sciences, Karachi. Fajr angle: 18, Isha angle: 18 |
+| `UMM_AL_QURA` | Umm al-Qura University, Makkah. Fajr angle: 18, Isha interval: 90. *Note: you should add a +30 minute custom adjustment for Isha during Ramadan.* |
+| `NORTH_AMERICA` | Referred to as the ISNA method. This method is included for completeness but is not recommended. Fajr angle: 15, Isha angle: 15 |
+| `TEHRAN` | Institute of Geophysics, University of Tehran. Fajr angle: 17.7, Isha angle: 14 |
+| `JAFARIA` | Ithna Ashari Fajr angle: 16, Isha angle: 14 |
+| `Custom` | Custom Setting |
+
+**Madhab**
+
+| Value | Description |
+| ----- | ----------- |
+| `SHAFI` | Earlier Asr time |
+| `HANAFI` | Later Asr time |
+
+**HighLatitudeRule**
+
+| Value | Description |
+| ----- | ----------- |
+| `MIDDLE_OF_THE_NIGHT` | Fajr will never be earlier than the middle of the night and Isha will never be later than the middle of the night |
+| `SEVENTH_OF_THE_NIGHT` | Fajr will never be earlier than the beginning of the last seventh of the night and Isha will never be later than the end of the first seventh of the night |
+| `ANGLEBASED` | Similar to `SEVENTH_OF_THE_NIGHT`, but instead of 1/7, the fraction of the night used is fajrAngle/60 and ishaAngle/60 |
+| `NONE` | No adjustment |
+
+
 
 ## Reporting an issue
 
