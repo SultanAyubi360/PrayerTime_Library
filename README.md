@@ -251,8 +251,8 @@ live_rv.adapter = prayerAdapter
 ---
 
 ## ✨ Screenshots
-
-<table>
+<kbd>
+ <table>
   <tr>
     <td><b>Media 1:</b><br>
         <img src="https://i.ibb.co/BnkJSxZ/Media-1.jpg" width="300"/>
@@ -262,6 +262,8 @@ live_rv.adapter = prayerAdapter
     </td>
   </tr>
 </table>
+
+</kbd>
 
 #### Calculation parameters
 
