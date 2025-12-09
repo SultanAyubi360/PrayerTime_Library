@@ -252,12 +252,12 @@ live_rv.adapter = prayerAdapter
 
 ## ✨ Screenshots
 
-<kbd>
-	**Media 1:**  
-  <img src="https://i.ibb.co/BnkJSxZ/Media-1.jpg" width=30% height=30%/>
-	**Media 2:**  
-  <img src="https://i.ibb.co/n8SckX7/Media.jpg" width=30% height=30%/>
-</kbd>
+<table>
+  <tr>
+    <td><b>Media 1:</b><br><img src="https://i.ibb.co/BnkJSxZ/Media-1.jpg" width="200"/></td>
+    <td><b>Media 2:</b><br><img src="https://i.ibb.co/n8SckX7/Media.jpg" width="200"/></td>
+  </tr>
+</table>
 
 #### Calculation parameters
 
