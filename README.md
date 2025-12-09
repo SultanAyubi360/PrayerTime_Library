@@ -254,17 +254,16 @@ live_rv.adapter = prayerAdapter
 <kbd>
  <table>
   <tr>
-	  <br>
-    <td><b>Media 1:</b><br>
-        <img src="https://i.ibb.co/BnkJSxZ/Media-1.jpg" width="300"/>
+    <td>
+      <b>Media 1:</b><br>
+      <img src="https://i.ibb.co/BnkJSxZ/Media-1.jpg" width="300"/>
     </td>
-	  <br>
-    <td><b>Media 2:</b><br>
-        <img src="https://i.ibb.co/n8SckX7/Media.jpg" width="300"/>
+    <td align="center">
+      <b>Media 2:</b><br>
+      <img src="https://i.ibb.co/n8SckX7/Media.jpg" width="300"/>
     </td>
   </tr>
 </table>
-
 </kbd>
 
 #### Calculation parameters
