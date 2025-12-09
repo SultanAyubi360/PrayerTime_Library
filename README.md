@@ -254,8 +254,8 @@ live_rv.adapter = prayerAdapter
 
 <kbd>
 	
-<img src="https://i.ibb.co/BnkJSxZ/Media-1.jpg" width=30% height=30%/>
-<img src="https://i.ibb.co/n8SckX7/Media.jpg" width=30% height=30%/>
+<img src="https://i.ibb.co/BnkJSxZ/Media-1.jpg" width=50% height=30%/>
+<img src="https://i.ibb.co/n8SckX7/Media.jpg" width=50% height=30%/>
 
 </kbd>
 
